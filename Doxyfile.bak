@@ -1,0 +1,31 @@
+# Doxyfile pour la documentation de la Bataille Navale
+
+# Spécifiez le répertoire source
+INPUT = .
+
+# Spécifiez les extensions de fichiers que vous souhaitez inclure dans la documentation
+FILE_PATTERNS = *.c *.h
+
+# Spécifiez le répertoire de sortie pour la documentation générée
+OUTPUT_DIRECTORY = ./documentation
+
+#format de sortie de la documentation (HTML ici)
+GENERATE_HTML = YES
+
+#le titre de la documentation
+PROJECT_NAME = "Bataille Navale Documentation"
+
+#fichiers et répertoires à exclure de la documentation
+EXCLUDE = ./build
+
+# Spécifiez le fichier Makefile pour générer automatiquement la documentation lors de la compilation
+EXTRACT_ALL = YES
+
+# Activez la génération de documentation pour les fichiers C et H
+GENERATE_LATEX = NO
+
+# Activez l'affichage des avertissements lors de la génération de documentation
+WARNINGS = YES
+
+# Activez le traitement récursif des sous-répertoires
+RECURSIVE = YES
